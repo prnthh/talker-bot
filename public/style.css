@@ -27,13 +27,12 @@ p {
 }
 
 form {
-  margin-bottom: 25px;
   padding: 15px;
   background-color: cyan;
   display: inline-block;
   width: 100%;
-  max-width: 340px;
-  border-radius: 3px;
+  border-bottom-right-radius: 9px;
+  border-bottom-left-radius: 9px;
 }
 
 input {
@@ -47,16 +46,18 @@ input {
 }
 
 button {
+  padding:10px;
+  margin:0px 0 0px 0;
   font-size: 16px;
-  border-radius: 3px;
-  background-color: lightgrey;
+  font-color:black;
+  border-radius: 1px;
+  background-color: transparent; 
   border: 1px solid grey;
-  box-shadow: 2px 2px teal;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: yellow;
+  background-color: black;
 }
 
 button:active {
@@ -79,4 +80,37 @@ footer > a {
 
 .nicejob {
   text-decoration: line-through;
+}
+
+#contain {
+  width:100%;
+  text-align:center;
+}
+
+
+
+.modal {
+  display:inline-block;
+  border: 1px solid black;
+  background-color:white;
+  border-radius:9px;
+  text-align:left;
+}
+
+#chatbox {
+  padding:10px;
+  width:380px;
+  height:300px;
+  overflow-x:hidden;
+  overflow-y:visible;
+}
+
+.leftMsg {
+  text-align:left;
+  padding-bottom:5px;
+}
+
+.rightMsg {
+  text-align:right;
+  padding-bottom:5px;
 }

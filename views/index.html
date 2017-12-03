@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Welcome to Glitch!</title>
+    <title>Talker: The Learning Bot</title>
     <meta name="description" content="A cool thing made with Glitch">
     <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
     <meta charset="utf-8">
@@ -19,29 +19,47 @@
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <header>
-      <h1>
-        A Dream of the Future
-      </h1>
-    </header>
-
+    
     <main>
-      <p class="bold">Oh hi,</p>
-      <p>Tell me your hopes and dreams:</p>
-      <form>
-        <input type="text" maxlength="100" placeholder="Dreams!">
-        <button type="submit">Submit</button>
-      </form>
-      <section class="dreams">
-        <ul id="dreams">
-        </ul>
-      </section>
+      <div id="contain">
+        <div id="panelContainer">
+          <div class="modal" style="width:200px;height:260px;vertical-align:top;margin-top:25px;margin-right:15px;padding:10px;">
+            <div style="height:180px; width:180px; border:dotted black 2px;font-size:120px;text-align:center; margin-bottom:10px; background-image: url('https://cdn.glitch.com/67243602-e8f2-4d00-b335-8eb646290b87%2Ftumblr_oxkoasB1K41wxdq3zo1_500.gif?1511586824215');" id="profilepic"></div>
+              <div><div style="margin-left:10px;display:inline-block;">
+                Chatting with: <div>
+                
+                
+                <select name="chatSelect" id="uName">
+                </select>
+                <button style="margin-left:30px;padding:0px;width:25px;height:25px" onclick="newUser()">
+                  +
+                </button></div>
+              </div></div>
+          </div>
+          <div class="modal">
+            <div id="chatbox">
+            
+            <section class="dreams">
+              <div id="dreams">
+                
+              </div>
+            </section>
+            </div>
+            <form>
+              <input type="text" maxlength="100" placeholder="  type a message (:">
+              <div style="margin: 0 0 0 auto; width:60px">
+
+              <button type="submit" style="background-color:#f7e70e; border-radius:4px;">Send</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+    </div>
     </main>
 
-    <footer>
-      <a href="https://glitch.com">
-        Remix this in Glitch
-      </a>
+    <footer style="text-align:right;font-size:7">
+      Made with love at NMIT.
     </footer>
 
     <!-- Your web-app is https, so your scripts need to be too -->
